@@ -11,18 +11,29 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+}
+
+@keyframes taille {
+    from {}
+    to {
+        min-height: 10000px;
+    }
 }
 
 .burger_cuit *,
 .burger_crue * {
     transition: all 0.25s ease;
     position: relative;
+    min-height: 10px;
+    animation: taille 100s;
+    animation-play-state: paused;
 }
 
 .burger_cuit *:hover {
     margin: 10px 0;
     transform: rotate(5deg);
+    animation-play-state: running;
 }
 
 .burger_crue *::after {

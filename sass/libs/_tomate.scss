@@ -1,6 +1,6 @@
 @mixin propriet($width: 100%, $height:10) {
     width: $width;
-    height: ($height)+px;
+    min-height: ($height)+px;
     background-color: #ff0000;
 }
 

@@ -2,7 +2,7 @@ $fromageCru: rgb(255, 217, 0);
 
 .burger_cuit, .burger_crue {
     .fromage {
-        height: 10px;
+        min-height: 10px;
         background-color: $fromageCru;
         border-radius: 15px 15px 0 0;
         position: relative;
