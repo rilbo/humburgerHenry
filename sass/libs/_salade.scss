@@ -5,11 +5,7 @@
 }
 
 .burger_cuit{
-    .salade_up{
-        @include propriet;
-        border-radius: 10px 10px 10px 10px;
-    }
-    .salade_down{
+    .salade{
         @include propriet;
         border-radius: 10px 10px 10px 10px;
     }

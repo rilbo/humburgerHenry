@@ -5,11 +5,7 @@
 }
 
 .burger_cuit{
-    .tomate_up{
-        @include propriet;
-        border-radius: 10px 10px 10px 10px;
-    }
-    .tomate_down{
+    .tomate{
         @include propriet;
         border-radius: 10px 10px 10px 10px;
     }
