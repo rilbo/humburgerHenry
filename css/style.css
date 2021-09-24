@@ -45,16 +45,35 @@ td, th {
 
 .pain_up {
   width: 100%;
-  height: 100%;
+  height: 100px;
+  background-color: #c28d62;
+  border-radius: 100px 100px 10px 10px;
 }
 
 .pain_down {
   width: 100%;
-  height: 100%;
+  height: 60px;
+  background-color: #c28d62;
+  border-radius: 10px 10px 100px 100px;
+}
+
+.pain_middle {
+  width: 100%;
+  height: 30px;
+  background-color: #c28d62;
+  border-radius: 10px;
 }
 
 body {
   background: #fffcac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.burger_cuit {
+  width: 30%;
 }
 
 /*# sourceMappingURL=style.css.map */

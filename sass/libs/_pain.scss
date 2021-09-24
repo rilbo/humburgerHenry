@@ -1,13 +1,21 @@
 
-@mixin taille($size: 100%){
-    width: $size;
-    height: $size;
+@mixin propriet($width : 100%, $height:60){
+    width: $width;
+    height: ($height)+px;
+    background-color:#c28d62;
 }
 
 .pain_up{
-    @include taille;
+    @include propriet(100%,100);
+    border-radius: 100px 100px 10px 10px;
 }
 
 .pain_down{
-    @include taille;
+    @include propriet;
+    border-radius: 10px 10px 100px 100px;
+}
+
+.pain_middle{
+    @include propriet(100%,30);
+    border-radius: 10px;
 }
