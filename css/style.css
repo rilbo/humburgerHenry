@@ -33,12 +33,81 @@ table {
 td, th {
   padding: 0; }
 
-body {
-  background: #fffcac; }
-
-.salade {
-  height: 20px;
+.burger_cuit .pain_up {
   width: 100%;
-  background-color: green; }
+  height: 100px;
+  background-color: #c28d62;
+  border-radius: 100px 100px 10px 10px; }
+.burger_cuit .pain_down {
+  width: 100%;
+  height: 60px;
+  background-color: #c28d62;
+  border-radius: 10px 10px 100px 100px; }
+.burger_cuit .pain_middle {
+  width: 100%;
+  height: 30px;
+  background-color: #c28d62;
+  border-radius: 10px; }
+
+.burger_cuit .salade_up {
+  width: 100%;
+  height: 15px;
+  background-color: #2eb10d;
+  border-radius: 10px 10px 10px; }
+.burger_cuit .salade_down {
+  width: 100%;
+  height: 15px;
+  background-color: #2eb10d;
+  border-radius: 10px 10px 10px 10px; }
+
+.burger_cuit .tomate_up {
+  width: 100%;
+  height: 10px;
+  background-color: #ff0000;
+  border-radius: 10px 10px 10px; }
+.burger_cuit .tomate_down {
+  width: 100%;
+  height: 10px;
+  background-color: #ff0000;
+  border-radius: 10px 10px 10px 10px; }
+
+.burger_cuit .fromage {
+  height: 20px;
+  background-color: #ffd900;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.75); }
+  .burger_cuit .fromage.droite::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #ffd900; }
+  .burger_cuit .fromage.gauche::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #ffd900; }
+
+body {
+  background: #fffcac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+
+.burger_cuit {
+  width: 30%; }
 
 /*# sourceMappingURL=style.css.map */
