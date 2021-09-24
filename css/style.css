@@ -43,6 +43,16 @@ td, th {
   padding: 0;
 }
 
+.pain_up {
+  width: 100%;
+  height: 100%;
+}
+
+.pain_down {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   background: #fffcac;
 }

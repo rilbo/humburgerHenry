@@ -1,0 +1,13 @@
+
+@mixin taille($size: 100%){
+    width: $size;
+    height: $size;
+}
+
+.pain_up{
+    @include taille;
+}
+
+.pain_down{
+    @include taille;
+}
