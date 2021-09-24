@@ -9,7 +9,7 @@ $fromageCui: rgb(209, 178, 2);
         position: relative;
         box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.75);
 
-        .droite {
+        &.droite {
             &::after {
                 content: "";
                 display: block;
@@ -24,7 +24,7 @@ $fromageCui: rgb(209, 178, 2);
             }
         }
 
-        .gauche {
+        &.gauche {
             &::after {
                 content: "";
                 display: block;
