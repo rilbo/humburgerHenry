@@ -4,18 +4,20 @@
     height: ($height)+px;
     background-color:#c28d62;
 }
+.burger_cuit{
+    .pain_up{
+        @include propriet(100%,100);
+        border-radius: 100px 100px 10px 10px;
+    }
+    
+    .pain_down{
+        @include propriet;
+        border-radius: 10px 10px 100px 100px;
+    }
+    
+    .pain_middle{
+        @include propriet(100%,30);
+        border-radius: 10px;
+    }
 
-.pain_up{
-    @include propriet(100%,100);
-    border-radius: 100px 100px 10px 10px;
-}
-
-.pain_down{
-    @include propriet;
-    border-radius: 10px 10px 100px 100px;
-}
-
-.pain_middle{
-    @include propriet(100%,30);
-    border-radius: 10px;
 }
