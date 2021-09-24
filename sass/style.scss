@@ -4,6 +4,7 @@
 @import "libs/_salade.scss";
 @import "libs/_tomate.scss";
 @import "libs/_fromage.scss";
+
 body {
     background: rgb(255, 252, 172);
     display: flex;
@@ -11,49 +12,6 @@ body {
     align-items: center;
     min-height: 100vh;
     overflow: hidden;
-}
-
-@keyframes blop {
-    from {}
-    30% {
-        /*
-          Identity matrix is used as basis here.
-          The matrix below describes the
-          following transformations:
-            Translates every X point by -50px
-            Translates every Y point by -100px
-            Translates every Z point by 0
-            Scales down by 10%
-        */
-        transform: matrix3d(
-          1,0,0,0,
-          0,1,0,0,
-          0,0,1,0,
-          -50,-100,0,1.1
-        );
-    
-      }
-      50% {
-        transform: matrix3d(
-          1,0,0,0,
-          0,1,0,0,
-          0,0,1,0,
-          0,0,0,0.9
-        ) scale(8);
-      }
-      80% {
-         transform: matrix3d(
-          1,0,0,0,
-          0,1,0,0,
-          0,0,1,0,
-          50,100,0,1.1
-        )
-      }
-      to {}
-}
-
-.burger_crue {
-    animation: blop 1s;
 }
 
 .burger_cuit *,
