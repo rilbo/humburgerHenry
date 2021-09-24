@@ -7,18 +7,37 @@ $fromageCui: rgb(209, 178, 2);
         background-color: $fromageCru;
         border-radius: 15px 15px 0 0;
         position: relative;
+        box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.75);
 
-        &::after {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 20px;
-            left: 5%;
-            width: 0;
-            height: 0;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            border-top: 20px solid $fromageCru;
+        .droite {
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 5%;
+                width: 0;
+                height: 0;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 20px solid $fromageCru;
+            }
         }
+
+        .gauche {
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 20px;
+                left: 5%;
+                width: 0;
+                height: 0;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 20px solid $fromageCru;
+            }
+        }
+
     }
 }
