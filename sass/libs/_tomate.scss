@@ -7,9 +7,16 @@
 .burger_cuit{
     .tomate_up{
         @include propriet;
-        border-radius: 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
     }
     .tomate_down{
+        @include propriet;
+        border-radius: 10px 10px 10px 10px;
+    }
+}
+
+.burger_crue{
+    .tomate{
         @include propriet;
         border-radius: 10px 10px 10px 10px;
     }

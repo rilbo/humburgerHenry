@@ -7,10 +7,18 @@
 .burger_cuit{
     .salade_up{
         @include propriet;
-        border-radius: 10px 10px 10px;
+        border-radius: 10px 10px 10px 10px;
     }
     .salade_down{
         @include propriet;
         border-radius: 10px 10px 10px 10px;
     }
 }
+
+.burger_crue{
+    .salade{
+        @include propriet;
+        border-radius: 10px 10px 10px 10px;
+    }
+}
+
