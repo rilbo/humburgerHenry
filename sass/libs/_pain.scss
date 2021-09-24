@@ -18,3 +18,8 @@
         border-radius: 10px;
     }
 }
+
+.pain{
+    @include propriet(100%, 190);
+    border-radius: 100px 100px 60px 60px;
+}
