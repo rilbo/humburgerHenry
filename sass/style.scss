@@ -4,16 +4,17 @@
 @import "libs/_salade.scss";
 @import "libs/_tomate.scss";
 @import "libs/_fromage.scss";
-
 body {
     background: rgb(255, 252, 172);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    overflow: hidden;
 }
 
-.burger_cuit *, .burger_crue * {
+.burger_cuit *,
+.burger_crue * {
     transition: all 0.25s ease;
     position: relative;
 }
@@ -63,16 +64,16 @@ body {
     }
 }
 
-h3{
+h3 {
     margin-bottom: 50px;
 }
 
-.dispo:nth-child(2){
+.dispo:nth-child(2) {
     margin-left: 100px;
 }
 
-.burger_crue{
-    div{
+.burger_crue {
+    div {
         margin-bottom: 30px;
     }
 }
