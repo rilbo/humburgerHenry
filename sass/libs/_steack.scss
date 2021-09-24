@@ -1,4 +1,4 @@
-@mixin propriet($width: 100%, $height:80) {
+@mixin propriet($width: 100%, $height:30) {
     width: $width;
     height: ($height)+px;
     background-color: #482509;
@@ -6,7 +6,7 @@
 
 .burger_cuit {
     .steack {
-        @include propriet(100%, 30);
+        @include propriet;
         border-radius: 10px;
     }
 }
