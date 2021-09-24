@@ -1,0 +1,24 @@
+$fromageCru: rgb(255, 217, 0);
+$fromageCui: rgb(209, 178, 2);
+
+.burger_cuit {
+    .fromage {
+        height: 20px;
+        background-color: $fromageCru;
+        border-radius: 15px 15px 0 0;
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 20px;
+            left: 5%;
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid $fromageCru;
+        }
+    }
+}
