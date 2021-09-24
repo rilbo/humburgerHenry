@@ -58,26 +58,26 @@ td, th {
   background-color: #CB808B;
 }
 
-.burger_cuit .pain_up {
+.burger_cuit .pain:first-child {
   width: 100%;
   height: 100px;
   background-color: #c28d62;
   border-radius: 100px 100px 10px 10px;
 }
-.burger_cuit .pain_down {
-  width: 100%;
-  height: 60px;
-  background-color: #c28d62;
-  border-radius: 10px 10px 100px 100px;
-}
-.burger_cuit .pain_middle {
+.burger_cuit .pain {
   width: 100%;
   height: 30px;
   background-color: #c28d62;
   border-radius: 10px;
 }
+.burger_cuit .pain:last-child {
+  width: 100%;
+  height: 60px;
+  background-color: #c28d62;
+  border-radius: 10px 10px 100px 100px;
+}
 
-.pain {
+.burger_crue .pain {
   width: 100%;
   height: 190px;
   background-color: #c28d62;
@@ -131,35 +131,20 @@ td, th {
   position: relative;
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.75);
 }
-.burger_cuit .fromage.droite::after, .burger_crue .fromage.droite::after {
+.burger_cuit .fromage + .steack, .burger_crue .fromage + .steack {
+  position: relative;
+}
+.burger_cuit .fromage + .steack::after, .burger_crue .fromage + .steack::after {
   content: "";
   display: block;
   position: absolute;
-  top: 10px;
+  top: 0px;
   right: 5%;
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid #ffd900;
-}
-.burger_cuit .fromage.gauche::after, .burger_crue .fromage.gauche::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 10px;
-  left: 5%;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 10px solid #ffd900;
-}
-.burger_cuit .steack ~ .fromage, .burger_crue .steack ~ .fromage {
-  background-color: #d1b202;
-}
-.burger_cuit .steack ~ .fromage::after, .burger_crue .steack ~ .fromage::after {
-  border-top-color: #d1b202;
 }
 
 body {
