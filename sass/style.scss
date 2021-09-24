@@ -4,7 +4,12 @@
 @import "libs/_salade.scss";
 @import "libs/_tomate.scss";
 @import "libs/_fromage.scss";
-
 body {
     background: rgb(255, 252, 172);
+}
+
+.burger_cuit {
+    width: 500px;
+    height: 800px;
+    border: solid 1px black;
 }
