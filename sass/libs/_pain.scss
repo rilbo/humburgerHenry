@@ -1,26 +1,20 @@
-<<<<<<< HEAD
-=======
-
-@mixin propriet($width : 100%, $height:60){
+@mixin propriet($width: 100%, $height:60) {
     width: $width;
     height: ($height)+px;
-    background-color:#c28d62;
+    background-color: #c28d62;
 }
-.burger_cuit{
-    .pain_up{
-        @include propriet(100%,100);
+
+.burger_cuit {
+    .pain_up {
+        @include propriet(100%, 100);
         border-radius: 100px 100px 10px 10px;
     }
-    
-    .pain_down{
+    .pain_down {
         @include propriet;
         border-radius: 10px 10px 100px 100px;
     }
-    
-    .pain_middle{
-        @include propriet(100%,30);
+    .pain_middle {
+        @include propriet(100%, 30);
         border-radius: 10px;
     }
-
 }
->>>>>>> 1fde0cd623a5821bca2c9ab906d2f8409fba57db
