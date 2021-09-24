@@ -3,7 +3,7 @@ $fromageCui: rgb(209, 178, 2);
 
 .burger_cuit {
     .fromage {
-        height: 20px;
+        height: 10px;
         background-color: $fromageCru;
         border-radius: 15px 15px 0 0;
         position: relative;
@@ -14,13 +14,13 @@ $fromageCui: rgb(209, 178, 2);
                 content: "";
                 display: block;
                 position: absolute;
-                top: 20px;
+                top: 10px;
                 right: 5%;
                 width: 0;
                 height: 0;
-                border-left: 20px solid transparent;
-                border-right: 20px solid transparent;
-                border-top: 20px solid $fromageCru;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid $fromageCru;
             }
         }
 
@@ -29,13 +29,13 @@ $fromageCui: rgb(209, 178, 2);
                 content: "";
                 display: block;
                 position: absolute;
-                top: 20px;
+                top: 10px;
                 left: 5%;
                 width: 0;
                 height: 0;
-                border-left: 20px solid transparent;
-                border-right: 20px solid transparent;
-                border-top: 20px solid $fromageCru;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 10px solid $fromageCru;
             }
         }
 
