@@ -20,11 +20,14 @@
     }
 }
 
-.burger_crue{
+.burger_crue{ 
     .pain{
         @include propriet(100%, 190);
         border-radius: 100px 100px 60px 60px;
+
+        &::after {
+            content: 'Tu veux du pain ?';
+            color: #c28d62;
+        }
     }  
 }
-
-

@@ -15,6 +15,11 @@
     .salade{
         @include propriet;
         border-radius: 10px 10px 10px 10px;
+
+        &::after {
+            content: 'Du VERT';
+            color: #2eb10d;
+        }
     }
 }
 

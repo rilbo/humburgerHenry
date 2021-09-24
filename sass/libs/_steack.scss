@@ -16,5 +16,10 @@
         @include propriet;
         border-radius: 10px;
         background-color: #CB808B;
+
+        &::after {
+            content: 'FINDUS !';
+            color: #CB808B;
+        }
     }
 }

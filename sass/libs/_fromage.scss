@@ -27,3 +27,12 @@ $fromageCru: rgb(255, 217, 0);
     }
 
 }
+
+.burger_crue {
+    .fromage {
+        &::after {
+            content: 'DU FROMAGE !';
+            color: $fromageCru;
+        }
+    }
+}
