@@ -90,3 +90,12 @@ h3 {
         margin-bottom: 30px;
     }
 }
+
+.error{
+    border: 1px black solid;
+    background-color: lightgreen;
+    &--serius{
+        @extend .error;
+        border-width: 3px;
+    }
+}

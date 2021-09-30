@@ -60,7 +60,7 @@ td, th {
 }
 .burger_crue .steack::after {
   content: "FINDUS !";
-  color: #CB808B;
+  color: #bc5c6a;
 }
 
 .burger_cuit .pain:first-child {
@@ -90,7 +90,7 @@ td, th {
 }
 .burger_crue .pain::after {
   content: "Tu veux du pain ?";
-  color: #c28d62;
+  color: #ae7343;
 }
 
 .burger_cuit .salade {
@@ -108,7 +108,7 @@ td, th {
 }
 .burger_crue .salade::after {
   content: "Du VERT";
-  color: #2eb10d;
+  color: #22810a;
 }
 
 .burger_cuit .tomate {
@@ -126,7 +126,7 @@ td, th {
 }
 .burger_crue .tomate::after {
   content: "Tomate !";
-  color: #FF0000;
+  color: #cc0000;
 }
 
 .burger_cuit .fromage, .burger_crue .fromage {
@@ -154,7 +154,7 @@ td, th {
 
 .burger_crue .fromage::after {
   content: "DU FROMAGE !";
-  color: #ffd900;
+  color: #ccae00;
 }
 
 body {
@@ -163,6 +163,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 15px 0px;
   overflow-x: hidden;
 }
 
@@ -234,6 +235,14 @@ h3 {
 
 .burger_crue div {
   margin-bottom: 30px;
+}
+
+.error, .error--serius {
+  border: 1px black solid;
+  background-color: lightgreen;
+}
+.error--serius {
+  border-width: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */
