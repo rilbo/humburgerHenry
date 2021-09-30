@@ -18,7 +18,7 @@
 
         &::after {
             content: 'Tomate !';
-            color: #FF0000;
+            color: darken(#FF0000, 10);
         }
     }
 }

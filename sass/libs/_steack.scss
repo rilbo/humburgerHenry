@@ -19,7 +19,7 @@
 
         &::after {
             content: 'FINDUS !';
-            color: #CB808B;
+            color: darken(#CB808B, 10);
         }
     }
 }

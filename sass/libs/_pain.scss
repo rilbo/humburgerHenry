@@ -27,7 +27,7 @@
 
         &::after {
             content: 'Tu veux du pain ?';
-            color: #c28d62;
+            color: darken(#c28d62, 10);
         }
     }  
 }

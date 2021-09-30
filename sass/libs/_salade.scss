@@ -18,7 +18,7 @@
 
         &::after {
             content: 'Du VERT';
-            color: #2eb10d;
+            color: darken(#2eb10d, 10);
         }
     }
 }
