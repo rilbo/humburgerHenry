@@ -1,10 +1,11 @@
-$fromageCru: rgb(255, 217, 0);
+$emmental: rgb(255, 217, 0);
+$cheddar: rgb(223, 145, 28);
 
 .burger_cuit, .burger_crue {
     .fromage {
         min-height: 10px;
-        background-color: $fromageCru;
         border-radius: 15px 15px 0 0;
+        background-color: $emmental;
         position: relative;
         box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.75);
 
@@ -21,7 +22,29 @@ $fromageCru: rgb(255, 217, 0);
                 height: 0;
                 border-left: 10px solid transparent;
                 border-right: 10px solid transparent;
-                border-top: 10px solid $fromageCru;
+                border-top: 10px solid rgb(0, 0, 0);
+            }
+        }
+    }
+
+    .emmental {
+        @extend .fromage;
+        background-color: $emmental;
+
+        & + .steack {
+            &::after {
+                border-top-color: $emmental;
+            }
+        }
+    }
+
+    .cheddar {
+        @extend .fromage;
+        background-color: $cheddar;
+
+        & + .steack {
+            &::after {
+                border-top-color: $cheddar;
             }
         }
     }
@@ -32,7 +55,23 @@ $fromageCru: rgb(255, 217, 0);
     .fromage {
         &::after {
             content: 'DU FROMAGE !';
-            color: darken($fromageCru, 10);
+            color: $emmental;
+        }
+    }
+
+    .emmental {
+        @extend .fromage;
+
+        &::after {
+            color: $emmental;
+        }
+    }
+
+    .cheddar {
+        @extend .fromage;
+
+        &::after {
+            color: $cheddar;
         }
     }
 }
